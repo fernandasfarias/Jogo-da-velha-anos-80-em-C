@@ -69,3 +69,14 @@ int percorrendoDiagonalSecundaria(char *matriz[3][3]){
 
     return 0;
 }
+
+int deuVelha(char *matriz[3][3]){
+    cont = 0;
+    for(int i = 0; i < 3; i++){
+        for(int j = 0; j < 3; j++){
+            if(matriz[i][j] != "🌌") cont++;
+        }
+    }
+    if(cont == 9) return 1;
+    else return 0;
+}
